@@ -1,0 +1,15 @@
+Makefile
+/.env
+/.env.dist
+/vendor/
+
+###> docker ###
+/docker/
+docker-compose.yml
+###< docker ###
+
+###> audit ###
+/reports/
+/coverage/
+coverage.xml
+###< audit ###

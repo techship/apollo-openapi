@@ -1,3 +1,3 @@
-# ![Logo](logo.png =250x250)
+# ![Logo](logo.png)
 
 Light OpenAPI parser library in PHP

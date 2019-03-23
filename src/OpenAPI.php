@@ -73,7 +73,7 @@ class OpenAPI
     }
 
     /**
-     * Find a specific path (i.e endpoint) and return its operations.
+     * Get a specific path (i.e endpoint) and return its operations.
      *
      * @param string $path
      *

@@ -2,6 +2,12 @@
 
 Light OpenAPI parser library in PHP based on the [OpenAPI Specification](https://swagger.io/docs/specification/about/) allowing developers to extract easily schema's data.
 
+## How to install?
+
+```
+$ composer install
+```
+
 ## What can you do with it?
 
 ### Get Paths
@@ -313,4 +319,10 @@ components:
             $ref: '#/components/schemas/ArticleBody'
       description: Article object.
       required: true
+```
+
+## Run tests
+
+```
+$ phpdbg -qrr ./vendor/phpspec/phpspec/bin/phpspec run -f progress
 ```

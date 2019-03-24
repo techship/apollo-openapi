@@ -5,7 +5,7 @@ Light OpenAPI parser library in PHP based on the [OpenAPI Specification](https:/
 ## How to install?
 
 ```
-$ composer install
+$ composer require nass59/apollo-openapi
 ```
 
 ## What can you do with it?
@@ -17,7 +17,7 @@ In OpenAPI terms, paths are endpoints (resources), such as /users or /reports/su
 All paths are relative to the API server URL.
 
 ```php
-$openAPI = new OpenAPI();
+$openAPI = new OpenAPI('config/schemas/', 'apollo.yaml');
 $openAPI->getPaths();
 /*
  * [
@@ -36,7 +36,7 @@ In OpenAPI terms, paths are endpoints (resources),  such as /users or /reports/s
 Operations are the HTTP methods used to manipulate these paths, such as GET, POST or DELETE.
 
 ```php
-$openAPI = new OpenAPI();
+$openAPI = new OpenAPI('config/schemas/', 'apollo.yaml');
 $openAPI->getPathsWithOperations();
 /*
  * [
@@ -57,7 +57,7 @@ $openAPI->getPathsWithOperations();
 Get a specific path (i.e endpoint) and return its operations.
 
 ```php
-$openAPI = new OpenAPI();
+$openAPI = new OpenAPI('config/schemas/', 'apollo.yaml');
 $openAPI->getPathWithOperations('/articles');
 /*
  * [
@@ -76,7 +76,7 @@ OpenAPI 3.0 provides the requestBody keyword to describe request bodies.
 > Request bodies are optional by default.
 
 ```php
-$openAPI = new OpenAPI();
+$openAPI = new OpenAPI('config/schemas/', 'apollo.yaml');
 $operations = $openAPI->getPathWithOperations('/articles');
 $openAPI->getRequestBody($operations['post']);
 /*
@@ -93,7 +93,7 @@ OpenAPI 3.0 data types are based on an extended subset JSON Schema Specification
 The data types are described using a Schema object.
 
 ```php
-$openAPI = new OpenAPI();
+$openAPI = new OpenAPI('config/schemas/', 'apollo.yaml');
 $openAPI->getDefinition('/articles', 'postArticle');
 /*
  * [

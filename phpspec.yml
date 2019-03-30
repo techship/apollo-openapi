@@ -1,8 +1,8 @@
-#extensions:
-#  LeanPHP\PhpSpec\CodeCoverage\CodeCoverageExtension:
-#    format:
-#      - html
-#      - clover
-#    output:
-#      html: coverage/unit
-#      clover: coverage.xml
+extensions:
+  LeanPHP\PhpSpec\CodeCoverage\CodeCoverageExtension:
+    format:
+      - html
+      - clover
+    output:
+      html: coverage/unit
+      clover: coverage.xml

@@ -9,7 +9,7 @@ namespace Apollo\Component\OpenAPI;
  */
 class Definition
 {
-    const DEFAULT_FORMAT = 'application/hal+json';
+    public const DEFAULT_FORMAT = 'application/hal+json';
 
     /**
      * @param array $components

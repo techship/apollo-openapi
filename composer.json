@@ -2,7 +2,7 @@
     "name": "nass59/apollo-openapi",
     "type": "library",
     "description": "Apollo - OpenAPI",
-    "keywords": ["php7", "openapi"],
+    "keywords": ["php8", "openapi"],
     "license": "proprietary",
     "authors": [
         {
@@ -11,26 +11,16 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^8.0",
         "ext-json": "*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
-        "infection/infection": "dev-master",
-        "leanphp/phpspec-code-coverage": "dev-patch-1",
-        "phpmd/phpmd": "dev-master",
+        "friends-of-phpspec/phpspec-code-coverage": "dev-master",
+        "justinrainbow/json-schema": "5.*",
         "phpmetrics/phpmetrics": "dev-master",
-        "phpspec/phpspec": "dev-master",
-        "sebastian/phpcpd": "^4.1",
-        "squizlabs/php_codesniffer": "dev-master"
+        "phpspec/phpspec": "6.*"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/samsonasik/phpspec-code-coverage",
-            "no-api": true
-        }
-    ],
     "minimum-stability": "dev",
     "config": {
         "preferred-install": {
